@@ -1,6 +1,6 @@
-I have developed a few scripts to help streamline the process of adding computers to Intune Autopilot and getting them enrolled.
+I have developed a script to help streamline the process of adding computers to Intune Autopilot and getting them enrolled.  This works on previously used PCs as well as brand new OEM machines.
 
-"UploadAutopilotHash-TEMPLATE.ps1" is intended for brand new out of the box PCs that need to get their hash uploaded (or for PCs that need to get added and are ready to be reset to OOBE status). 
+"UploadAutopilotHash-TEMPLATE.ps1" is mainly intended for brand new out of the box PCs that need to get their hash uploaded (or for PCs that need to get added and are ready to be reset to OOBE status), but can also be used on previously used machines as long as you are ok with keeping their installed apps installed. 
 Pre-req's for this script:
   - Autopilot device profile has been set up in Intune, ideally in "self-driven" mode.
   - Enterprise app in Azure has been created, usually named something like "Autopilot hash upload".
