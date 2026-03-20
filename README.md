@@ -1,4 +1,4 @@
-I have developed a script to help streamline the process of adding computers to Intune Autopilot and getting them enrolled.  This works on previously used PCs as well as brand new OEM machines.
+I have developed a script to help streamline the process of adding computers to Intune Autopilot and getting them enrolled.  The issue has been automating the process of both adding them to autopilot and also enrolling them during OOBE.  Microsoft does not support those steps natively so my script gets around that by adding an OOBE reset once the autopilot add portion has been completed and verified.  This works on previously used PCs as well as brand new OEM machines.
 
 "UploadAutopilotHash-TEMPLATE.ps1" is mainly intended for brand new out of the box PCs that need to get their hash uploaded (or for PCs that need to get added and are ready to be reset to OOBE status), but can also be used on previously used machines as long as you are ok with keeping their installed apps installed. 
 Pre-req's for this script:
